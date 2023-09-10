@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Alexa.NET/1.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Alexa.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Alexa.NET.dll": {}
+        }
+      },
       "Amazon.Lambda.Core/2.1.0": {
         "type": "package",
         "compile": {
@@ -30,10 +42,37 @@
             "related": ".xml"
           }
         }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "Alexa.NET/1.22.0": {
+      "sha512": "Q/DBMkW5+AewIFwbFyU+gFZprrlfH/B8Yxlad3ISPSf4FB3sCYGE6oNiGWFliF3qt6AP77I5p/QLuUHd4d1djg==",
+      "type": "package",
+      "path": "alexa.net/1.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alexa.net.1.22.0.nupkg.sha512",
+        "alexa.net.nuspec",
+        "lib/netstandard2.0/Alexa.NET.dll",
+        "nuget-icon.png",
+        "readme.md"
+      ]
+    },
     "Amazon.Lambda.Core/2.1.0": {
       "sha512": "ok06UhfBZw6j6+PhiJR9C0EOMuJvnq8rMCHVkaFmPFrlI/q447ukwGZQKaAKqodV+MNTfpb/iPxjgUPVbSlVVw==",
       "type": "package",
@@ -65,10 +104,41 @@
         "lib/netcoreapp3.1/Amazon.Lambda.Serialization.SystemTextJson.dll",
         "lib/netcoreapp3.1/Amazon.Lambda.Serialization.SystemTextJson.xml"
       ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Alexa.NET >= 1.22.0",
       "Amazon.Lambda.Core >= 2.1.0",
       "Amazon.Lambda.Serialization.SystemTextJson >= 2.3.1"
     ]
@@ -112,6 +182,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Alexa.NET": {
+            "target": "Package",
+            "version": "[1.22.0, )"
+          },
           "Amazon.Lambda.Core": {
             "target": "Package",
             "version": "[2.1.0, )"
