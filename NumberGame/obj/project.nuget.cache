@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BmUNkF9wM6A53opky3fyybnqUT2pBya3Crqr33FKhE1MJDby7nFRvtQNECd2FndYD1Lx73cG30kCBVxglpuTgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\myles\\source\\repos\\NumberGame\\NumberGame\\NumberGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\myles\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\myles\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.1\\amazon.lambda.serialization.systemtextjson.2.3.1.nupkg.sha512",
+    "C:\\Users\\myles\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.16\\microsoft.netcore.app.crossgen2.win-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
